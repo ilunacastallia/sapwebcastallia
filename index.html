@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <title>SAP Web - Castallia v0.1</title>
+   <!--- CSS FOR FORMS -->
+	 <link href="style.css" rel="stylesheet" type="text/css">
+	 <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/skeleton.css">
+    <!-- Icons font CSS-->
+    <link href="js/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="js/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- js CSS-->
+    <link href="js/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="js/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Metro 4 -->
+    <link rel="stylesheet" href="css/metro-all.min.css">
+    <link href="css/metro-icons.css" rel="stylesheet">
+  </head>
+
+<body>
+<nav data-role="ribbonmenu">
+    <ul class="tabs-holder">
+        <li class="static"><a href="#">Menú</a></li>
+        <li><a href="#section-one">Base de Datos</a></li>
+        <li><a href="#section-two">Dos</a></li>
+        <li><a href="#section-three">Tres</a></li>
+    </ul>
+
+    <div class="content-holder">
+        <div class="section" id="section-one">
+            <div class="group">
+
+                <div data-role="buttonsGroup" data-cls-active="active">
+                    <button class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-add mif-2x fg-black"></span>
+                        </span>
+                        <span class="caption">Nuevo</span>
+                    </button>
+                    <button class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-search"></span>
+                        </span>
+                        <span class="caption">Buscar</span>
+                    </button>
+                    <button class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-printer"></span>
+                        </span>
+                        <span class="caption">Imprimir</span>
+                    </button>
+                </div>
+            </div>
+            <div class="group">
+                <div class="ribbon-toggle-group">
+                    <button class="ribbon-icon-button">
+                            <span class="icon">
+                                <span class="mif-arrow-left"></span>
+                            </span>
+                        <span class="caption">Registro Anterior</span>
+                    </button>
+
+                    <button class="ribbon-icon-button">
+                            <span class="icon">
+                                <span class="mif-backward"></span>
+                            </span>
+                        <span class="caption">Ver Primer Registro</span>
+                    </button>
+
+                    <button class="ribbon-icon-button">
+                            <span class="icon">
+                                <span class="mif-filter"></span>
+                            </span>
+                        <span class="caption">Filtrar</span>
+                    </button>
+                    <button class="ribbon-icon-button">
+                            <span class="icon">
+                                <span class="mif-arrow-right"></span>
+                            </span>
+                        <span class="caption">Siguiente Registro</span>
+                    </button>
+
+                    <button class="ribbon-icon-button">
+                            <span class="icon">
+                                <span class="mif-forward"></span>
+                            </span>
+                        <span class="caption">Ver Último Registro</span>
+                    </button>
+
+                    <button class="ribbon-icon-button">
+                            <span class="icon">
+                                <span class="mif-refresh"></span>
+                            </span>
+                        <span class="caption">Actualizar</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section-two">
+            <p class="p-4">Section two</p>
+        </div>
+        <div class="section" id="section-three">
+            <p class="p-4">Section three</p>
+        </div>
+    </div>
+</nav>
+<!-- FORM AREA -->
+<div class="sapwebarea">
+<h1>Datos de Socio de Negocios</h1>
+<!--- ACCOUNT INFO FINANCIAL !-->
+<div class="financialsummary">
+<div class="one-third column">
+	<div class="financialsummary_title">
+	Saldo de Cuenta
+	</div>
+	<div class="financialsummary_amount">
+	-$250,505.34
+	</div>	
+</div>
+<div class="one-third column">
+	<div class="financialsummary_title">
+	Pedidos Entrada de Mercancía
+	</div>
+	<div class="financialsummary_amount">
+	$0
+	</div>	
+</div>
+<div class="one-third column">
+	<div class="financialsummary_title">
+	Pedidos
+	</div>
+	<div class="financialsummary_amount">
+	-$1,901,517.82
+	</div>	
+</div>
+	</div>
+
+<!--- GENERAL FIELDS ALWAYS VISIBLE!-->
+                       <div class="alwaysvisibleform">
+                        <div class="form-row m-b-55">
+                            <div class="name">Nombre</div>
+                            <div class="value">
+                                        <div class="input-group">
+                                            <input class="input--style-5" type="text" name="Nombre">
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="form-row m-b-55">
+                            <div class="name">Nombre Extranjero</div>
+                            <div class="value">
+                                        <div class="input-group">
+                                            <input class="input--style-5" type="text" name="Nombre">
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Grupo</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject">
+                                            <option disabled="disabled" selected="selected">Elige opción</option>
+                                            <option>Proveedores</option>
+                                            <option>Clientes</option>
+                                            <option>Opción 3</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Moneda</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject">
+                                            <option disabled="disabled" selected="selected">Elige opción</option>
+                                            <option>Peso Mexicano MXN</option>
+                                            <option>Dólar Americano USD</option>
+                                            <option>Euro EUR</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">RFC</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="company">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row m-b-55">
+                            <div class="name">Phone</div>
+                            <div class="value">
+                                <div class="row row-refine">
+                                    <div class="col-3">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="area_code">
+                                            <label class="label--desc">Area Code</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="phone">
+                                            <label class="label--desc">Phone Number</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row p-t-20">
+                            <label class="label label--block">Are you an existing customer?</label>
+                            <div class="p-t-15">
+                                <label class="radio-container m-r-55">Yes
+                                    <input type="radio" checked="checked" name="exist">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container">No
+                                    <input type="radio" name="exist">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                  </div>
+<!--- TABS !-->
+<ul>
+  <li>
+    <input type="checkbox" checked>
+    <i></i>
+    <h2>General</h2>
+    <p>Aqui va una forma.</p>
+  </li>
+  <li>
+    <input type="checkbox" checked>
+    <i></i>
+    <h2>Personas de Contacto</h2>
+    <p>Aqui va otra forma.</p>
+  </li>
+  <li>
+    <input type="checkbox" checked>
+    <i></i>
+    <h2>Direcciones</h2>
+    <p>Aqui va la otra forma</p>
+  </li>
+</ul>
+</div>
+    <!-- Jquery JS-->
+    <script src="js/jquery/jquery.min.js"></script>
+    <!-- js JS-->
+    <script src="js/select2/select2.min.js"></script>
+    <script src="js/datepicker/moment.min.js"></script>
+    <script src="js/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+	<!--JS SCRIPT METRO  -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/metro.min.js"></script>
+</body>
+</html>
