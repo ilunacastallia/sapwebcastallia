@@ -38399,8 +38399,11 @@ html.metro-touch-device .streamer .stream.focused .stream-icon {
 }
 
 .ribbon-menu {
-    display: block;
-    position: relative
+	display: block;
+	position: sticky;
+	top: 0;
+	z-index: 999999;
+	background: #FFF;
 }
 
 .ribbon-menu .tabs-holder {
@@ -39552,8 +39555,9 @@ html.metro-touch-device .streamer .stream.focused .stream-icon {
 .sidebar-header {
     background: #1979ca top left no-repeat;
     background-size: cover;
-    height: 160px;
-    border-bottom: 1px #e0e0e0 solid
+    height: 150px;
+    border-bottom: 1px #e0e0e0 solid;
+	margin-top:25px;
 }
 
 .sidebar-header>.avatar {
@@ -39630,8 +39634,8 @@ html.metro-touch-device .streamer .stream.focused .stream-icon {
     display: block;
     color: inherit;
     text-transform: capitalize;
-    height: 48px;
-    line-height: 48px;
+    height: 40px;
+    line-height: 40px;
     padding-left: 56px;
     text-decoration: none;
     white-space: nowrap;

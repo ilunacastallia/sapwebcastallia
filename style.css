@@ -309,6 +309,11 @@ input {
     margin-bottom: 40px;
   }
   
+	.ribbon-menu .tabs-holder li {
+		height:40px !important;
+		line-height:40px !important;
+	}
+	
 	.ribbon-menu {
 		position: relative !important;
 	}
