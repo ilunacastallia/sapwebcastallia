@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <title>SAP Web - Castallia v0.1</title>
+   <!--- CSS FOR FORMS -->
+	 <link href="style.css" rel="stylesheet" type="text/css">
+	 <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/skeleton.css">
+    <!-- Icons font CSS-->
+    <link href="js/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="js/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- js CSS-->
+    <link href="js/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="js/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Metro 4 -->
+    <link rel="stylesheet" href="css/metro-all.css">
+    <link href="css/metro-icons.css" rel="stylesheet">
+    <style>
+        .login-form {
+            width: 350px;
+            height: auto;
+            top: 50%;
+            margin-top: -160px;
+        }
+    </style>
+  </head>
+
+<body>
+<body class="h-vh-100 bg-brandColor2">
+
+    <form class="login-form bg-white p-6 mx-auto border bd-default win-shadow"
+          data-role="validator"
+          action="javascript:"
+          data-clear-invalid="2000"
+          data-on-error-form="invalidForm"
+          data-on-validate-form="validateForm">
+        <span class="mif-vpn-lock mif-4x place-right" style="margin-top: -10px;"></span>
+        <h2 class="text-light">Acceso a SAP web</h2>
+        <hr class="thin mt-4 mb-4 bg-white">
+        <div class="form-group">
+            <input type="text" data-role="input" data-prepend="<span class='mif-envelop'>" placeholder="Email" data-validate="required email">
+        </div>
+        <div class="form-group">
+            <input type="password" data-role="input" data-prepend="<span class='mif-key'>" placeholder="Contraseña" data-validate="required minlength=6">
+        </div>
+        <div class="form-group mt-10">
+            <input type="checkbox" data-role="checkbox" data-caption="Recordarme" class="place-right">
+            <button class="button">Entrar</button>
+        </div>
+    </form>
+    <script>
+        function invalidForm(){
+            var form  = $(this);
+            form.addClass("ani-ring");
+            setTimeout(function(){
+                form.removeClass("ani-ring");
+            }, 1000);
+        }
+
+        function validateForm(){
+            $(".login-form").animate({
+                opacity: 0
+            });
+        }
+    </script>
+    <!-- Jquery JS-->
+    <script src="js/jquery/jquery.min.js"></script>
+    <!-- js JS-->
+    <script src="js/select2/select2.min.js"></script>
+    <script src="js/datepicker/moment.min.js"></script>
+    <script src="js/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+	<!--JS SCRIPT METRO  -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/metro.min.js"></script>
+</body>
+</html>

@@ -526,10 +526,10 @@ ul li:nth-of-type(2) {
 }
 ul li:nth-of-type(3) {
   animation-delay: 1s;
-}*/
+}
 ul li:last-of-type {
   padding-bottom: 0;
-}
+}*/
 ul li i {
   position: absolute;
   transform: translate(-6px, 0);

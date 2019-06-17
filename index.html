@@ -20,14 +20,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Metro 4 -->
-    <link rel="stylesheet" href="css/metro-all.min.css">
+    <link rel="stylesheet" href="css/metro-all.css">
     <link href="css/metro-icons.css" rel="stylesheet">
   </head>
 
 <body>
+<aside id="sb1" class="sidebar pos-absolute z-2" data-role="sidebar" data-toggle="#sidebar-toggle-2">
+    <div class="sidebar-header">
+    <a href="/" class="fg-white sub-action"
+       onclick="Metro.sidebar.close('#sb1');">
+        <span class="mif-cross mif-2x"></span>
+    </a>
+        <div class="avatar">
+            <img data-role="gravatar">
+        </div>
+        <span class="title fg-white">Carlos Ortiz</span>
+        <span class="subtitle fg-white">© Castallia</span>
+    </div>
+    <ul class="sidebar-menu">
+        <li><a><span class="mif-home icon"></span>Inicio</a></li>
+        <li><a><span class="mif-list2 icon"></span>Gestión</a></li>
+        <li><a><span class="mif-money icon"></span>Finanzas</a>
+			<ul class="sidebar-submenu">
+        		<li>Plan de Cuentas</li>
+        		<li>Asientos</li>
+        		<li>Informes Financieros</li>
+        	</ul>
+        </li>
+        <!--<li class="divider"></li>-->
+        <li><a><span class="mif-checkmark icon"></span>Oportunidades</a>
+		<ul class="sidebar-submenu">
+        		<li>Oportunidad</li>
+        		<li>Informes de Oportunidades</li>
+        </ul>
+        </li>
+        <li><a><span class="mif-phone icon"></span>Ventas - Clientes</a>
+		<ul class="sidebar-submenu">
+        		<li>Cotización</li>
+        		<li>Orden de Venta</li>
+        		<li>Factura de Clientes</li>
+        		<li>Nota de Crédito Clientes</li>
+        		<li>Informe de Ventas</li>
+        </ul>
+        </li>
+        <li><a><span class="mif-cart icon"></span>Compras - Proveedores</a></li>
+        <li><a><span class="mif-users icon"></span>Socios de Negocios</a>
+        	<ul class="sidebar-submenu">
+        		<li>Datos Maestros Socios de Negocios</li>
+        		<li>Actividad</li>
+        		<li>Asistente de Generación de Campaña</li>
+        		<li>Campaña</li>
+        		<li>Reconciliación Interna</li>
+        		<li>Informe de Socios de Negocios</li>
+        	</ul>
+       	</li>
+        <li><a><span class="mif-credit-card icon"></span>Gestión de Bancos</a></li>
+        <li><a><span class="mif-barcode icon"></span>Inventario</a></li>
+    </ul>
+</aside>
 <nav data-role="ribbonmenu">
     <ul class="tabs-holder">
-        <li class="static"><a href="#">Menú</a></li>
+<li class="static">
+    <div id="sidebar-toggle-2">
+        <a href="#">MENU</a>
+    </div>
+</li>
+        <!--<li class="static"><a href="#">Menú</a></li>-->
         <li><a href="#section-one">Base de Datos</a></li>
         <li><a href="#section-two">Dos</a></li>
         <li><a href="#section-three">Tres</a></li>
@@ -36,7 +94,6 @@
     <div class="content-holder">
         <div class="section" id="section-one">
             <div class="group">
-
                 <div data-role="buttonsGroup" data-cls-active="active">
                     <button class="ribbon-button">
                         <span class="icon">
@@ -104,7 +161,28 @@
             </div>
         </div>
         <div class="section" id="section-two">
-            <p class="p-4">Section two</p>
+            <div class="group">
+                <div data-role="buttonsGroup" data-cls-active="active">
+                    <button class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-add mif-2x fg-black"></span>
+                        </span>
+                        <span class="caption">Nuevo</span>
+                    </button>
+                    <button class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-search"></span>
+                        </span>
+                        <span class="caption">Buscar</span>
+                    </button>
+                    <button class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-printer"></span>
+                        </span>
+                        <span class="caption">Imprimir</span>
+                    </button>
+                </div>
+            </div>
         </div>
         <div class="section" id="section-three">
             <p class="p-4">Section three</p>
