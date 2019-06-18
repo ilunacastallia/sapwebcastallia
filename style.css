@@ -248,14 +248,9 @@ padding: 20px;
 }
 
 /** ACCORDION **/
-.saptabs {
-    padding: 5%;
+.accordion.material > .frame > .heading:hover {
+    background: #EEE;
 }
-
-ul.saptabs {
-    list-style-type: none;
-}
-
 
 /** FORM STYLE **/
 
@@ -597,8 +592,8 @@ ul li:last-of-type {
 ul li i {
   position: absolute;
   transform: translate(-6px, 0);
-  margin-top: 16px;
-  right: 0;
+  margin-top: 7px;
+  right: 20px;
 }
 ul li i:before, ul li i:after {
   content: "";

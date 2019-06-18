@@ -25220,7 +25220,7 @@ input.input-small {
 .switch-material .check {
     width: 36px;
     height: 16px;
-    background-color: #929292;
+    background-color: #FF2626;
     border-radius: 8px;
     overflow: visible;
     position: relative;
@@ -25237,7 +25237,7 @@ input.input-small {
     margin-top: -3px;
     margin-left: -3px;
     border-radius: 50%;
-    background-color: #00aba9;
+    background-color: #3cb308;
     -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .16), 0 2px 5px 0 rgba(0, 0, 0, .26);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .16), 0 2px 5px 0 rgba(0, 0, 0, .26)
 }
@@ -25247,11 +25247,11 @@ input.input-small {
 }
 
 .switch-material input:not(:checked)~.check::before {
-    background-color: #fff
+    background-color: #bd0000;
 }
 
 .switch-material input:checked~.check {
-    background-color: rgba(0, 150, 136, .5)
+    background-color: #94FF49;
 }
 
 .switch-material input:checked~.check::before {
