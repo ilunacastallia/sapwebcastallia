@@ -16617,7 +16617,7 @@ h6 {
 }
 
 .text-muted {
-    color: #bebebe
+    color: #888
 }
 
 .alt-header,
@@ -17997,8 +17997,8 @@ section::after {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-left: -12px;
-    margin-right: -12px
+	margin:0 -12px;
+	
 }
 
 .cell {
@@ -22656,7 +22656,7 @@ textarea {
     display: block;
     padding: 0 .75rem;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
     height: 36px;
     line-height: 36px;
     background: #fff none;
@@ -22916,8 +22916,8 @@ select.focused,
 select:focus,
 textarea.focused,
 textarea:focus {
-    -webkit-box-shadow: 0 0 0 3px rgba(228, 228, 228, .45);
-    box-shadow: 0 0 0 3px rgba(228, 228, 228, .45)
+    -webkit-box-shadow: 0 0 5px 2px rgba(21, 255, 214, 0.45);
+    box-shadow: 0 0 5px 2px rgba(21, 255, 214, 0.45);
 }
 
 .file.focused .input-clear-button,
@@ -23460,7 +23460,8 @@ label {
     background-color: #f8f8f8;
     color: #1d1d1d;
     line-height: 1.25rem;
-    white-space: nowrap
+    white-space: nowrap;
+	font-size: 0.7rem;
 }
 
 .hidden-input {
@@ -23652,7 +23653,7 @@ input:-webkit-autofill:hover {
     padding: 0;
     cursor: pointer;
     position: relative;
-    margin: 0
+    margin: 3px 0;
 }
 
 .select .d-menu li a,
@@ -23961,6 +23962,7 @@ input:-webkit-autofill:hover {
     line-height: 18px;
     font-size: .8rem
 }
+
 
 .textarea,
 textarea {
@@ -25077,7 +25079,7 @@ input.input-small {
     position: relative;
     height: 1.25rem;
     width: 2.8125rem;
-    border: 2px #1d1d1d solid;
+    border: 2px #C00C00 solid;
     cursor: pointer;
     background: 0 0;
     z-index: 1;
@@ -25085,7 +25087,8 @@ input.input-small {
     vertical-align: middle;
     border-radius: .5625rem;
     -ms-flex-negative: 0;
-    flex-shrink: 0
+    flex-shrink: 0;
+	background:#C00C00;
 }
 
 .switch .check::after {
@@ -25098,16 +25101,16 @@ input.input-small {
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    border: 2px #333 solid;
+    border: 2px #FFF solid;
     cursor: pointer;
-    background: #333;
+    background: #FFF;
     z-index: 2;
     border-radius: 50%
 }
 
 .switch input[type=checkbox]:checked~.check {
-    background: #1d1d1d;
-    border-color: #1d1d1d
+	background: #59BD56;
+	border-color: #59BD56;
 }
 
 .switch input[type=checkbox]:checked~.check::after {

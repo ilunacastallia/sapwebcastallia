@@ -116,8 +116,8 @@
 </li>
         <!--<li class="static"><a href="#">Menú</a></li>-->
         <li><a href="#section-one">Base de Datos</a></li>
-        <li><a href="#section-two">Dos</a></li>
-        <li><a href="#section-three">Tres</a></li>
+        <li class="disabled"><a href="#section-two">Dos</a></li>
+        <li class="disabled"><a href="#section-three">Tres</a></li>
     </ul>
 
     <div class="content-holder">
@@ -223,7 +223,7 @@
 <h1>Datos de Socio de Negocios</h1>
 <!--- ACCOUNT INFO FINANCIAL !-->
 <div class="financialsummary">
-<div class="one-third column">
+<div class="cell-md-4">
 	<div class="financialsummary_title">
 	Saldo de Cuenta
 	</div>
@@ -231,7 +231,7 @@
 	-$250,505.34
 	</div>	
 </div>
-<div class="one-third column">
+<div class="cell-md-4">
 	<div class="financialsummary_title">
 	Pedidos Entrada de Mercancía
 	</div>
@@ -239,7 +239,7 @@
 	$0
 	</div>	
 </div>
-<div class="one-third column">
+<div class="cell-md-4">
 	<div class="financialsummary_title">
 	Pedidos
 	</div>
@@ -247,117 +247,81 @@
 	-$1,901,517.82
 	</div>	
 </div>
-	</div>
-
+</div>
 <!--- GENERAL FIELDS ALWAYS VISIBLE!-->
-                       <div class="alwaysvisibleform">
-                        <div class="form-row m-b-55">
-                            <div class="name">Nombre</div>
-                            <div class="value">
-                                        <div class="input-group">
-                                            <input class="input--style-5" type="text" name="Nombre">
-                                        </div>
-                            </div>
-                        </div>
-                        <div class="form-row m-b-55">
-                            <div class="name">Nombre Extranjero</div>
-                            <div class="value">
-                                        <div class="input-group">
-                                            <input class="input--style-5" type="text" name="Nombre">
-                                        </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="name">Grupo</div>
-                            <div class="value">
-                                <div class="input-group">
-                                    <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="subject">
-                                            <option disabled="disabled" selected="selected">Elige opción</option>
-                                            <option>Proveedores</option>
-                                            <option>Clientes</option>
-                                            <option>Opción 3</option>
-                                        </select>
-                                        <div class="select-dropdown"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="name">Moneda</div>
-                            <div class="value">
-                                <div class="input-group">
-                                    <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="subject">
-                                            <option disabled="disabled" selected="selected">Elige opción</option>
-                                            <option>Peso Mexicano MXN</option>
-                                            <option>Dólar Americano USD</option>
-                                            <option>Euro EUR</option>
-                                        </select>
-                                        <div class="select-dropdown"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="name">RFC</div>
-                            <div class="value">
-                                <div class="input-group">
-                                    <input class="input--style-5" type="text" name="company">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row m-b-55">
-                            <div class="name">Phone</div>
-                            <div class="value">
-                                <div class="row row-refine">
-                                    <div class="col-3">
-                                        <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="area_code">
-                                            <label class="label--desc">Area Code</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-9">
-                                        <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="phone">
-                                            <label class="label--desc">Phone Number</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row p-t-20">
-                            <label class="label label--block">Are you an existing customer?</label>
-                            <div class="p-t-15">
-                                <label class="radio-container m-r-55">Yes
-                                    <input type="radio" checked="checked" name="exist">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="radio-container">No
-                                    <input type="radio" name="exist">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
-                  </div>
+<div class="activoinactivo">
+<input type="checkbox" data-role="switch" data-caption="¿Este perfil esta Activo?" checked>
+</div>
+<!--- GENERAL FIELDS ALWAYS VISIBLE!-->
+	<form class="socionegociosform">
+    <div class="row">
+        <div class="cell-md-4">
+            <input type="text" disabled placeholder="Manual">
+        </div>
+        <div class="cell-md-4">
+            <input type="text" disabled placeholder="P002">
+        </div>
+        <div class="cell-md-4">
+		<select data-role="select" data-append="Tipo de Socio">
+     		   	<option selected></option>
+     		   	<option value="Proveedor">Proveedor</option>
+  		      	<option value="Cliente">Cliente</option>
+		</select>
+		</div>
+		</div>
+    <div class="row">
+        <div class="cell-md-4">
+            <input type="text" placeholder="Nombre">
+        </div>
+        <div class="cell-md-4">
+            <input type="text" placeholder="Apellido Paterno">
+        </div>
+        <div class="cell-md-4">
+            <input type="text" placeholder="Apellido Materno">
+        </div>
+    </div>
+    <div class="row">
+        <div class="cell-md-4">
+		<select data-role="select" data-append="Moneda">
+     		   	<option selected></option>
+     		   	<option value="MXN">Peso Mexicano MXN</option>
+  		      	<option value="USD">Dolar Americano USD</option>
+ 	     	  <option value="EUR">Euro EUR</option>
+		</select>
+        </div>
+        <div class="cell-md-4">
+		<select data-role="select" data-append="Grupo">
+     		   	<option selected></option>
+     		   	<option value="mini">Proveedor</option>
+  		      	<option value="site">Cliente</option>
+ 	     	  <option value="portal">Portal</option>
+		</select>
+        </div>
+        <div class="cell-md-4">
+            <input type="text" placeholder="RFC">
+		</div>
+		</div>
+</form>
+</div>
 <!--- TABS !-->
-<ul>
+<div class="sapaccordion">
+<ul class="saptabs">
   <li>
     <input type="checkbox" checked>
     <i></i>
-    <h2>General</h2>
+    <h4>General</h4>
     <p>Aqui va una forma.</p>
   </li>
   <li>
     <input type="checkbox" checked>
     <i></i>
-    <h2>Personas de Contacto</h2>
+    <h4>Personas de Contacto</h4>
     <p>Aqui va otra forma.</p>
   </li>
   <li>
     <input type="checkbox" checked>
     <i></i>
-    <h2>Direcciones</h2>
+    <h4>Direcciones</h4>
     <p>Aqui va la otra forma</p>
   </li>
 </ul>
