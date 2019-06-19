@@ -298,7 +298,10 @@
 		</select>
         </div>
         <div class="cell-md-4">
-            <input type="text" placeholder="RFC">
+            <input type="text" data-validate="required minlength=13" placeholder="RFC">
+               <span class="invalid_feedback">
+               El RFC debe tener 13 caracteres. Revisa por favor.
+            </span>
 		</div>
 		</div>
 </form>
@@ -311,7 +314,7 @@
      data-on-frame-close="console.log('frame was closed!', arguments[0])"
      data-material="true">
     <div class="frame">
-        <div class="heading">Datos de Contacto</div>
+        <div class="heading"><span class="mif-phone icon"></span> Datos de Contacto</div>
         <div class="content">
          <div class="row">
          <div class="cell-md-2">
@@ -329,7 +332,8 @@
     <li data-caption="Myrna Carreón" data-content="<span class='text-muted'>Planeación</span>"></li>
 </ul>
 		</div>
-       	<div class="cell-md-6">
+       	<div class="cell-md-6 contactdata">
+         <input type="checkbox" data-role="switch" data-caption="Establecer como contacto principal">
           <input data-role="input" disabled placeholder="ID de Contacto">
           <input data-role="input" placeholder="Nombre" data-prepend="<span class='mif-user'></span>">
           <input data-role="input" placeholder="Segundo Nombre">
@@ -340,24 +344,140 @@
           <input data-role="input" placeholder="Teléfono 1" data-prepend="<span class='mif-phonelink-ring'></span>">
           <input data-role="input" placeholder="Teléfono 2" data-prepend="<span class='mif-phone'></span>">
           <input data-role="input" placeholder="Teléfono 3" data-prepend="<span class='mif-phone'></span>">
-          <input data-role="input" placeholder="Email" data-prepend="<span class='mif-mail'></span>">
+          <input data-role="input" placeholder="Email" data-validate="required email" data-prepend="<span class='mif-mail'></span>">
           <textarea data-role="textarea" placeholder="Notas sobre esta persona" data-prepend="<span class='mif-chat-bubble'></span>"></textarea>
         </div>
        </div>
         </div>
     </div>
     <div class="frame">
-        <div class="heading">Header 2</div>
+        <div class="heading"><span class="mif-home icon"></span> Dirección</div>
         <div class="content">
-            <div class="p-2">Wildly open a starship. Belay, ye small wench- set...</div>
+         <div class="row">
+         <div class="cell-md-2">
+            	<ul class="v-menu open compact open">
+  				  <li><a href="#"><span class="mif-user-plus icon"></span>Agregar</a></li>
+ 				   <li><a href="#"><span class="mif-user-minus icon"></span>Eliminar</a></li>
+ 				   <li><a href="#"><span class="mif-pencil icon"></span>Editar</a></li>
+				</ul>
+         </div>
+         <div class="cell-md-4">
+<ul data-role="listview" data-view="content" data-select-node="true">
+  <li data-caption="Pago a">
+      <ul>
+    <li data-caption="Ana Islas" data-content="<span class='text-muted'>Sistemas</span>"></li>
+    <li data-caption="Carlos Ortiz" data-content="<span class='text-muted'>Chef</span>"></li>
+    <li data-caption="Angelica Amaya" data-content="<span class='text-muted'>Compras</span>"></li>
+    <li data-caption="Myrna Carreón" data-content="<span class='text-muted'>Planeación</span>"></li>
+	  </ul>
+	  </li>
+</ul>
+<ul data-role="listview" data-view="content" data-select-node="true">
+  <li data-caption="Destino">
+      <ul>
+    <li data-caption="Astrid Castillo" data-content="<span class='text-muted'>Sistemas</span>"></li>
+    <li data-caption="Andrea Barrio" data-content="<span class='text-muted'>Chef</span>"></li>
+    <li data-caption="Alex Lazzarotto" data-content="<span class='text-muted'>Compras</span>"></li>
+	  </ul>
+	  </li>
+</ul>
+		</div>
+       	<div class="cell-md-6 contactdata">
+         <input type="checkbox" data-role="switch" data-caption="Establecer como dirección de pago principal">
+          <input data-role="input" disabled placeholder="ID de Dirección">
+          <input data-role="input" placeholder="Calle">
+          <input data-role="input" placeholder="Número">
+          <input data-role="input" placeholder="Colonia">
+          <input data-role="input" placeholder="Ciudad">
+          <input data-role="input" placeholder="Código Postal">
+          <select data-role="select" data-append="Estado">
+			<option value="Aguascalientes">Aguascalientes</option>
+			<option value="Baja California">Baja California</option>
+			<option value="Baja California Sur">Baja California Sur</option>
+			<option value="Campeche">Campeche</option>
+			<option value="Chiapas">Chiapas</option>
+			<option value="Chihuahua" selected="selected">Chihuahua</option>
+			<option value="Ciudad de México">Ciudad de México</option>
+			<option value="Coahuila">Coahuila</option>
+			<option value="Colima">Colima</option>
+			<option value="Durango">Durango</option>
+			<option value="Guanajuato">Guanajuato</option>
+			<option value="Guerrero">Guerrero</option>
+			<option value="Hidalgo">Hidalgo</option>
+			<option value="Jalisco">Jalisco</option>
+			<option value="Estado de México">Estado de México</option>
+			<option value="Michoacán">Michoacán</option>
+			<option value="Morelos">Morelos</option>
+			<option value="Nayarit">Nayarit</option>
+			<option value="Nuevo León">Nuevo León</option>
+			<option value="Oaxaca">Oaxaca</option>
+			<option value="Puebla">Puebla</option>
+			<option value="Querétaro">Querétaro</option>
+			<option value="Quintana Roo">Quintana Roo</option>
+			<option value="San Luis Potosí">San Luis Potosí</option>
+			<option value="Sinaloa">Sinaloa</option>
+			<option value="Sonora">Sonora</option>
+			<option value="Tabasco">Tabasco</option>
+			<option value="Tamaulipas">Tamaulipas</option>
+			<option value="Tlaxcala">Tlaxcala</option>
+			<option value="Veracruz">Veracruz</option>
+			<option value="Yucatán">Yucatán</option>
+			<option value="Zacatecas">Zacatecas</option>
+		  </select>
+          <input data-role="input" placeholder="Email" data-validate="required email" data-prepend="<span class='mif-mail'></span>">
+          <textarea data-role="textarea" placeholder="Notas sobre esta dirección de pago" data-prepend="<span class='mif-chat-bubble'></span>"></textarea>
+        </div>
+       </div>
         </div>
     </div>
     <div class="frame">
-        <div class="heading">Header 3</div>
+        <div class="heading"><span class="mif-dollar2"></span> Condiciones de Pago</div>
         <div class="content">
-            <div class="p-2">Bitter turkey can be made tasty by brushing with...</div>
+		<div class="row">
+		<div class="cell-md-6">
+		<select data-role="select" data-append="Condiciones de Pago">
+     		   	<option selected></option>
+     		   	<option value="Cash">Cash</option>
+  		      	<option value="30 Dias">30 Dias</option>
+  		      	<option value="45 Dias">45 Dias Neto</option>
+  		      	<option value="Pago Inmediato">Pago Inmediato</option>
+		</select>
+          <input data-role="input" placeholder="% Intereses por Retraso" data-append="%">
+		<select data-role="select" data-append="Lista de Precios">
+     		   	<option selected="selected"></option>
+     		   	<option value="AB Pollo">AB Pollo</option>
+  		      	<option value="Abarrotes Institucionales">Abarrotes Institucionales</option>
+  		      	<option value="45 Dias">Alberto Aguirre</option>
+  		      	<option value="Alinorth">Alinorth</option>
+  		      	<option value="Armando Mendoza">Armando Mendoza</option>
+		</select>
+          <input data-role="input" placeholder="% Descuento Total" data-append="%">
+          <input data-role="input" placeholder="Límite de Crédito" data-append="$">
+          <input data-role="input" placeholder="Límite de Comprometido" data-append="$">
+		<select data-role="select" data-append="Descuento efectivo">
+     		   	<option selected></option>
+     		   	<option selected="selected"></option>
+     		   	<option value="Cash">Desc. más bajo</option>
+  		      	<option value="30 Dias">Desc. más alto</option>
+  		      	<option value="45 Dias">Promedio</option>
+		</select>
+        </div>
+		<div class="cell-md-6">
+        <input data-role="input" placeholder="País del Banco">
+        <input data-role="input" placeholder="Nombre del Banco">
+        <input data-role="input" placeholder="CLABE">
+        <input data-role="input" placeholder="Número de Cuenta">
+        <input data-role="input" placeholder="Código BIC/SWIFT">
+        <input data-role="input" placeholder="Nombre de Cuenta Bancaria">
+        <input data-role="input" placeholder="Sucursal">
+		</div>
+		</div>
+        </div>
         </div>
     </div>
+	<div id="footer">
+	&copy; Castallia 
+	</div>
 </div>
 
     <!-- Jquery JS-->

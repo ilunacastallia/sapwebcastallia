@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <title>SAP Web - Castallia</title>
+   <!--- CSS FOR FORMS -->
+	 <link href="style.css" rel="stylesheet" type="text/css">
+	 <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/simple-scrollbar.css">
+     <link rel="stylesheet" href="css/skeleton.css">
+    <!-- Icons font CSS-->
+    <link href="js/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="js/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- js CSS-->
+    <link href="js/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="js/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Metro 4 -->
+    <link rel="stylesheet" href="css/metro-all.css">
+    <link href="css/metro-icons.css" rel="stylesheet">
+  </head>
+
+<body class="tilesbody">
+<!-- WORK AREA -->
+<ul class="ss-container app-bar-present pos-absolute" data-role="materialtabs">
+    <li><a href="#finanzas">Finanzas</a></li>
+    <li><a href="#oportunidades">Oportunidades</a></li>
+    <li><a href="#ventas">Ventas</a></li>
+    <li><a href="#compras">Compras</a></li>
+    <li><a href="#sociosdenegocios">Socios de Negocios</a></li>
+    <li><a href="#bancos">Bancos</a></li>
+    <li><a href="#inventario">Inventario</a></li>
+    <li><a href="#produccion">Producción</a></li>
+</ul>
+<div class="saptilesarea">
+	<div id="finanzas" class="tiles-grid tiles-group size-3">
+		<div data-role="tile" class="bg-white fg-black">
+			<span class="mif-money icon"></span>
+			<span class="branding-bar">Plan de Cuentas</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-pencil icon"></span>
+			<span class="branding-bar">Asiento Contable</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black">
+			<span class="mif-chart-bars icon"></span>
+			<span class="branding-bar">Informes Financieros</span>
+		</div>
+	</div>
+	<div id="oportunidades" class="tiles-grid tiles-group size-4">
+		<div data-role="tile" class="bg-white fg-black">
+			<span class="mif-checkmark icon"></span>
+			<span class="branding-bar">Oportunidad</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-chart-bars icon"></span>
+			<span class="branding-bar">Informes de Oportunidades</span>
+		</div>
+	</div>
+	<div id="ventas" class="tiles-grid tiles-group size-4">
+		<div data-role="tile" class="bg-white fg-black">
+			<span class="mif-calculator icon"></span>
+			<span class="branding-bar">Cotización</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-note icon"></span>
+			<span class="branding-bar">Orden de Ventas</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-books icon"></span>
+			<span class="branding-bar">Factura de Clientes</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-credit-card icon"></span>
+			<span class="branding-bar">Nota de Crédito Clientes</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-chart-bars icon"></span>
+			<span class="branding-bar">Informe de Ventas</span>
+		</div>
+	</div>
+	<div id="compras" class="tiles-grid tiles-group size-4">
+		<div data-role="tile" class="bg-white fg-black">
+			<span class="mif-coins icon"></span>
+			<span class="branding-bar">Oferta de Compra</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-cart icon"></span>
+			<span class="branding-bar">Pedidos</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-dropbox icon"></span>
+			<span class="branding-bar">Pedido Entrada de Mercancías</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-books icon"></span>
+			<span class="branding-bar">Factura de Proveedor</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-credit-card icon"></span>
+			<span class="branding-bar">Nota de Crédito Proveedores</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-chart-bars icon"></span>
+			<span class="branding-bar">Informe de Compras</span>
+		</div>
+	</div>
+	<div id="sociosdenegocios" class="tiles-grid tiles-group size-4">
+		<a href="index.html" data-role="tile" class="bg-white fg-black">
+			<span class="mif-user-check icon"></span>
+			<span class="branding-bar">Datos Maestros de Socio de Negocios</span>
+		</a>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-chart-bars icon"></span>
+			<span class="branding-bar">Informes de Socio de Negocios</span>
+		</div>
+	</div>
+	<div id="bancos" class="tiles-grid tiles-group size-4">
+		<div data-role="tile" class="bg-white fg-black">
+			<span class="mif-dollars icon"></span>
+			<span class="branding-bar">Pagos Recibidos</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-money icon"></span>
+			<span class="branding-bar">Pagos Efectuados</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-chart-bars icon"></span>
+			<span class="branding-bar">Informes de Bancos</span>
+		</div>
+	</div>
+	<div id="inventario" class="tiles-grid tiles-group size-4">
+		<div data-role="tile" class="bg-white fg-black">
+			<span class="mif-checkmark icon"></span>
+			<span class="branding-bar">Datos Maestros de Artículo</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-arrow-down icon"></span>
+			<span class="branding-bar">Entrada de Mercancías</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-arrow-up icon"></span>
+			<span class="branding-bar">Salida de Mercancías</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-truck icon"></span>
+			<span class="branding-bar">Solicitud de Traslado</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-done_all icon"></span>
+			<span class="branding-bar">Transferencia de Stock</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-loop icon"></span>
+			<span class="branding-bar">Recuento de Inventario</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-chart-bars icon"></span>
+			<span class="branding-bar">Informe de Inventario</span>
+		</div>
+	</div>
+	<div id="produccion" class="tiles-grid tiles-group size-4">
+		<div data-role="tile" class="bg-white fg-black">
+			<span class="mif-list icon"></span>
+			<span class="branding-bar">Lista de Materiales</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-tools icon"></span>
+			<span class="branding-bar">Orden de Fabricación</span>
+		</div>
+		<div data-role="tile" class="bg-white fg-black ">
+			<span class="mif-chart-bars icon"></span>
+			<span class="branding-bar">Informes de Producción</span>
+		</div>
+	</div>
+</div>
+
+
+    <!-- Jquery JS-->
+    <script src="js/jquery/jquery.min.js"></script>
+    <!-- js JS-->
+    <script src="js/select2/select2.min.js"></script>
+    <script src="js/datepicker/moment.min.js"></script>
+    <script src="js/simple-scrollbar.js"></script>
+<script src="js/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+	<!--JS SCRIPT METRO  -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/metro.min.js"></script>
+	<script>
+		let scrollDiv = document.querySelector(".area");
+		SimpleScrollbar.initEl(scrollDiv);
+	</script>
+</body>
+</html>

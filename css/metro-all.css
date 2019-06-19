@@ -25108,6 +25108,11 @@ input.input-small {
     border-radius: 50%
 }
 
+.contactdata .switch .check {
+    background: #ABABAB;
+    border-color: #9C9C9C;
+}
+
 .switch input[type=checkbox]:checked~.check {
 	background: #59BD56;
 	border-color: #59BD56;
@@ -34003,8 +34008,8 @@ html.metro-touch-device .streamer .stream.focused .stream-icon {
 .tile-medium .branding-bar,
 .tile-small .branding-bar,
 .tile-wide .branding-bar {
-    height: 32px;
-    line-height: 32px;
+    height: 38px;
+    line-height: 15px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -34013,9 +34018,9 @@ html.metro-touch-device .streamer .stream.focused .stream-icon {
     font-size: .875rem;
     font-weight: 500;
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    z-index: 2
+	white-space: normal;
+	z-index: 2;
+	overflow-wrap: break-word;
 }
 
 .tile-app .badge-bottom,
@@ -35513,7 +35518,10 @@ html.metro-touch-device .streamer .stream.focused .stream-icon {
     height: 1.5em;
     line-height: 1.5em;
     z-index: 1;
-    color: inherit
+    color: inherit;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 1.2em;
 }
 
 [class*=tile-].image-set .img {
@@ -35796,7 +35804,8 @@ html.metro-touch-device .streamer .stream.focused .stream-icon {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-flow: column wrap;
-    flex-flow: column wrap
+    flex-flow: column wrap;
+	margin:0 0 20px 0;
 }
 
 .listview.view-icons,
@@ -36087,7 +36096,8 @@ html.metro-touch-device .streamer .stream.focused .stream-icon {
 .listview .node-group>.data {
     padding-left: 24px;
     line-height: 24px;
-    font-size: 18px
+    font-size: 18px;
+	font-weight:bold;
 }
 
 .listview .node-group .node-toggle {
@@ -40131,7 +40141,7 @@ ul.sidebar-submenu {
 
 .tabs-material {
     margin: 0;
-    padding: 0 52px;
+    padding: 0 30px;
     position: fixed;
     height: auto;
     display: -webkit-box;
@@ -40145,8 +40155,8 @@ ul.sidebar-submenu {
     overflow-y: hidden;
     width: 100%;
     z-index: 1030;
-    background-color: #fff;
-    color: #1d1d1d;
+    background-color: transparent;
+    color: #FFF;
     white-space: nowrap;
     list-style: none inside;
     line-height: 1;
@@ -40184,8 +40194,7 @@ ul.sidebar-submenu {
     text-decoration: none;
     font-weight: 500;
     white-space: nowrap;
-    font-size: 14px;
-    text-transform: uppercase;
+    font-size: 18px;
     line-height: 20px;
     width: 100%
 }
@@ -40221,9 +40230,8 @@ ul.sidebar-submenu {
     bottom: 0;
     left: 0;
     color: transparent;
-    opacity: 1;
     z-index: 1;
-    background-color: #1d1d1d
+    background-color: #FFF;
 }
 
 .tabs-material .tab-badge {
