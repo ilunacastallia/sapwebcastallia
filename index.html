@@ -136,11 +136,17 @@
                         </span>
                         <span class="caption">Buscar</span>
                     </button>
-                    <button class="ribbon-button">
+                    <button class="ribbon-button" onclick="$('#info-box-1').data('infobox').open()">
                         <span class="icon">
                             <span class="mif-printer"></span>
                         </span>
                         <span class="caption">Imprimir</span>
+                    </button>
+                    <button class="ribbon-button" onclick="$('#info-box-1').data('infobox').open()">
+                        <span class="icon">
+                            <span class="mif-checkmark"></span>
+                        </span>
+                        <span class="caption">Guardar</span>
                     </button>
                 </div>
             </div>
@@ -218,6 +224,14 @@
         </div>
     </div>
 </nav>
+<!--NOTIFICATION HIDDEN DIV -->
+                    <div class="info-box" id="info-box-1" data-role="infobox">
+                        <span class="button square closer va-middle"></span>
+                        <div class="info-box-content">
+                            <h3>Hola Carlos</h3>
+                            <p>Carlos</p>
+                        </div>
+                    </div>
 <!-- FORM AREA -->
 <div class="sapwebarea">
 <h1>Datos de Socio de Negocios</h1>
@@ -271,13 +285,13 @@
 		</div>
     <div class="row">
         <div class="cell-md-4">
-            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Nombre Contacto">
         </div>
         <div class="cell-md-4">
-            <input type="text" placeholder="Apellido Paterno">
+            <input type="text" placeholder="Nombre Extranjero">
         </div>
         <div class="cell-md-4">
-            <input type="text" placeholder="Apellido Materno">
+            <input type="text" placeholder="Teléfono">
         </div>
     </div>
     <div class="row">
@@ -494,6 +508,8 @@
 	<!--JS SCRIPT METRO  -->
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/metro.min.js"></script>
+	<!--  Notificacions -->
+	<!-- Scroll Pretty -->
 	<script>
 		let scrollDiv = document.querySelector(".area");
 		SimpleScrollbar.initEl(scrollDiv);
