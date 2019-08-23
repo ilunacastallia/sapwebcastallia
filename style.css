@@ -220,6 +220,12 @@ padding: 20px;
 	transition:.3s linear;
 }
 
+.castalliatop {
+    font-size: 13px;
+    position: relative;
+    line-height: 30px !important;
+}
+
 /** FINANCIAL INFO **/
 .financialsummary {
     text-align: center;
