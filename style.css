@@ -208,7 +208,14 @@ body.tilesbody {
 .sapwebarea h1 {
 text-align: center;
 color: #062c39;
-padding: 20px;
+padding-top: 20px;
+}
+
+.sapwebarea h4 {
+text-align: center;
+color: #3A0;
+font-size:1rem;
+font-weight:bold;
 }
 
 .saptilesarea {
@@ -250,8 +257,22 @@ padding: 20px;
     float: left;
 }
 
-.socionegociosform input[type="text"], .socionegociosform select {
+.socionegociosform input[type="text"], .socionegociosform select, .pedidosformleft input[type="text"], .socionegociosformleft select, .pedidosformright input[type="text"], .pedidosformright select  {
     margin: 3px 0;
+}
+
+.pedidosformleft { 
+	width: 49%;
+	float: left;
+	margin: 0 1% 0 0;
+	z-index:99999;
+}
+
+.pedidosformright { 
+	width: 49%;
+	float: left;
+	z-index: 99999;
+	margin: 0;
 }
 
 /** DISABLER **/

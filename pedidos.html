@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <title>SAP Web - Castallia v0.15</title>
+   <!--- CSS FOR FORMS -->
+	 <link href="style.css" rel="stylesheet" type="text/css">
+	 <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/simple-scrollbar.css">
+     <link rel="stylesheet" href="css/skeleton.css">
+    <!-- Icons font CSS-->
+    <link href="js/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="js/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- js CSS-->
+    <link href="js/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="js/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Metro 4 -->
+    <link rel="stylesheet" href="css/metro-all.css">
+    <link href="css/metro-icons.css" rel="stylesheet">
+  </head>
+
+<body>
+<div class="row castalliatop ribbed-grayWhite p-1-sm text-center">
+    <div class="cell-sm-full cell-md-one-third cell-lg-3"><img src="img/castallia-logo.png" width="140px" /></div>
+    <div class="cell-sm-full cell-md-two-third cell-lg-3">Texto de Identificación</div>
+    <div class="cell-sm-full cell-md-half cell-lg-3">Ubicación</div>
+    <div class="cell-sm-full cell-md-half cell-lg-3"><a href="#"><span class="mif-exit"></span> Salir</a></div>
+</div>
+<aside id="sb1" class="sidebar" data-role="sidebar" data-toggle="#sidebar-toggle-2">
+    <div class="sidebar-header">
+    <a href="/" class="fg-white sub-action"
+       onclick="Metro.sidebar.close('#sb1');">
+        <span class="mif-cross mif-2x"></span>
+    </a>
+        <div class="avatar">
+            <img data-role="gravatar">
+        </div>
+        <span class="title fg-white">Carlos Ortiz</span>
+        <span class="subtitle fg-white">Sistemas</span>
+    </div>
+    <ul class="sidebar-menu area ss-container">
+        <li><a><span class="mif-home icon"></span>Inicio</a></li>
+        <li><a><span class="mif-money icon"></span>Finanzas</a>
+			<ul class="sidebar-submenu">
+        		<li>Plan de Cuentas</li>
+        		<li>Asientos</li>
+        		<li>Informes Financieros</li>
+        	</ul>
+        </li>
+        <!--<li class="divider"></li>-->
+        <li><a><span class="mif-checkmark icon"></span>Oportunidades</a>
+		<ul class="sidebar-submenu">
+        		<li>Oportunidad</li>
+        		<li>Informes de Oportunidades</li>
+        </ul>
+        </li>
+        <li><a><span class="mif-phone icon"></span>Ventas - Clientes</a>
+		<ul class="sidebar-submenu">
+        		<li>Cotización</li>
+        		<li>Orden de Venta</li>
+        		<li>Factura de Clientes</li>
+        		<li>Nota de Crédito Clientes</li>
+        		<li>Informe de Ventas</li>
+        </ul>
+        </li>
+        <li><a><span class="mif-cart icon"></span>Compras - Proveedores</a>
+		<ul class="sidebar-submenu">
+        		<li>Oferta de Compra</li>
+        		<li>Pedidos</li>
+        		<li>Pedido Entrada de Mercancías</li>
+        		<li>Factura de Proveedor</li>
+        		<li>Nota de Crédito Proveedores</li>
+        		<li>Informe de Compras</li>
+        </ul>
+        </li>
+        <li><a><span class="mif-users icon"></span>Socios de Negocios</a>
+        	<ul class="sidebar-submenu">
+        		<li>Datos Maestros Socios de Negocios</li>
+        		<li>Informe de Socios de Negocios</li>
+        	</ul>
+       	</li>
+        <li><a><span class="mif-credit-card icon"></span>Gestión de Bancos</a>
+        	<ul class="sidebar-submenu">
+        		<li>Pagos Recibidos</li>
+        		<li>Pagos Efectuados</li>
+        		<li>Informes de Bancos</li>
+        	</ul>
+        </li>
+        <li><a><span class="mif-barcode icon"></span>Inventario</a>
+        	<ul class="sidebar-submenu">
+        		<li>Datos Maestros de Artículo</li>
+        		<li>Entradas de Mercancías</li>
+        		<li>Salidas de Mercancías</li>
+        		<li>Solicitud de Traslado</li>
+        		<li>Transferencia de Stock</li>
+        		<li>Recuento de Inventario</li>
+        		<li>Informe de Inventario</li>
+        	</ul>
+		</li>
+        <li><a><span class="mif-cog icon"></span>Producción</a>
+        	<ul class="sidebar-submenu">
+        		<li>Orden de Fabricación</li>
+        		<li>Informes de Producción</li>
+        		<div class="menuspacer"></div>
+
+        	</ul>
+		</li>
+    </ul>
+</aside>
+<nav data-role="ribbonmenu">
+    <ul class="tabs-holder">
+<li class="static">
+    <div id="sidebar-toggle-2">
+        <a href="#">MENU</a>
+    </div>
+</li>
+        <!--<li class="static"><a href="#">Menú</a></li>-->
+        <li><a href="#section-one">Base de Datos</a></li>
+        <li class="disabled"><a href="#section-two">Dos</a></li>
+        <li class="disabled"><a href="#section-three">Tres</a></li>
+    </ul>
+
+    <div class="content-holder">
+        <div class="section" id="section-one">
+            <div class="group">
+                <div data-role="buttonsGroup">
+                    <button class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-add mif-2x fg-black"></span>
+                        </span>
+                        <span class="caption">Nuevo</span>
+                    </button>
+                    <button class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-search"></span>
+                        </span>
+                        <span class="caption">Buscar</span>
+                    </button>
+                    <button class="ribbon-button" onclick="$('#info-box-1').data('infobox').open()">
+                        <span class="icon">
+                            <span class="mif-printer"></span>
+                        </span>
+                        <span class="caption">Imprimir</span>
+                    </button>
+                    <button class="ribbon-button" onclick="$('#info-box-1').data('infobox').open()">
+                        <span class="icon">
+                            <span class="mif-checkmark"></span>
+                        </span>
+                        <span class="caption">Guardar</span>
+                    </button>
+                </div>
+            </div>
+            <div class="group">
+                <div class="ribbon-toggle-group">
+                    <button class="ribbon-icon-button">
+                            <span class="icon">
+                                <span class="mif-arrow-left"></span>
+                            </span>
+                        <span class="caption">Registro Anterior</span>
+                    </button>
+
+                    <button class="ribbon-icon-button">
+                            <span class="icon">
+                                <span class="mif-backward"></span>
+                            </span>
+                        <span class="caption">Ver Primer Registro</span>
+                    </button>
+
+                    <button class="ribbon-icon-button">
+                            <span class="icon">
+                                <span class="mif-filter"></span>
+                            </span>
+                        <span class="caption">Filtrar</span>
+                    </button>
+                    <button class="ribbon-icon-button">
+                            <span class="icon">
+                                <span class="mif-arrow-right"></span>
+                            </span>
+                        <span class="caption">Siguiente Registro</span>
+                    </button>
+
+                    <button class="ribbon-icon-button">
+                            <span class="icon">
+                                <span class="mif-forward"></span>
+                            </span>
+                        <span class="caption">Ver Último Registro</span>
+                    </button>
+
+                    <button class="ribbon-icon-button">
+                            <span class="icon">
+                                <span class="mif-refresh"></span>
+                            </span>
+                        <span class="caption">Actualizar</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section-two">
+            <div class="group">
+                <div data-role="buttonsGroup" data-cls-active="active">
+                    <button class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-add mif-2x fg-black"></span>
+                        </span>
+                        <span class="caption">Nuevo</span>
+                    </button>
+                    <button class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-search"></span>
+                        </span>
+                        <span class="caption">Buscar</span>
+                    </button>
+                    <button class="ribbon-button">
+                        <span class="icon">
+                            <span class="mif-printer"></span>
+                        </span>
+                        <span class="caption">Imprimir</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section-three">
+            <p class="p-4">Section three</p>
+        </div>
+    </div>
+</nav>
+<!--NOTIFICATION HIDDEN DIV -->
+                    <div class="info-box" id="info-box-1" data-role="infobox">
+                        <span class="button square closer va-middle"></span>
+                        <div class="info-box-content">
+                            <h3>Hola Carlos</h3>
+                            <p>Carlos</p>
+                        </div>
+                    </div>
+<!-- FORM AREA -->
+<div class="sapwebarea">
+<h1>Pedidos</h1>
+<h4>CAST-02-0001</h4>
+<!--- PEDIDOS INFO  !-->
+<div class="row">
+<div class="cell order-1">
+    <div class="row">
+        <div class="cell-md-12">
+            <input type="text" placeholder="Proveedor">
+        </div>
+	</div>
+    <div class="row">   
+           <div class="cell-md-12">
+            <input type="text" placeholder="Nombre">
+        </div>
+	</div>
+    <div class="row">
+        <div class="cell-md-12">
+            <input type="text" placeholder="Nombre Contacto">
+        </div>
+    </div>
+    <div class="row">
+        <div class="cell-md-12">
+            <input type="text" placeholder="Número de Referencia">
+        </div>
+    </div>
+    <div class="row">
+        <div class="cell-md-12">
+        <select data-role="select" data-append="Moneda">
+     		   	<option selected></option>
+     		   	<option value="MXN">Peso Mexicano MXN</option>
+  		      	<option value="USD">Dolar Americano USD</option>
+ 	     	  <option value="EUR">Euro EUR</option>
+		</select>
+        </div>
+    </div>
+</div>
+<div class="cell order-2">
+    <div class="row">
+        <div class="cell-md-12">
+            <input type="text" placeholder="Estado">
+        </div>
+	</div>
+    <div class="row">   
+           <div class="cell-md-12">
+            <input type="text" placeholder="Fecha de Contabilización">
+        </div>
+	</div>
+    <div class="row">
+        <div class="cell-md-12">
+            <input type="text" placeholder="Fecha de Entrega">
+        </div>
+    </div>
+    <div class="row">
+        <div class="cell-md-12">
+            <input type="text" placeholder="Fecha de Documento">
+        </div>
+    </div>
+    <div class="row">
+        <div class="cell-md-12">
+            <input type="text" placeholder="Proyecto SN">
+        </div>
+    </div>
+</div>
+</div>
+<!--- TABLE!-->
+<table class="table striped cell-border compact row-hover" data-role="table" data-rows="100" data-rows-steps="50, 100, 250" data-horizontal-scroll="true" data-show-pagination="false">
+    <thead>
+    <tr>
+        <th class="sortable-column sort-desc">#</th>
+        <th class="sortable-column">Número de Artículo</th>
+        <th class="sortable-column">Descripción del Artículo</th>
+        <th class="sortable-column">Cantidad</th>
+        <th class="sortable-column">Unidad</th>
+        <th class="sortable-column">% de Descuento</th>
+        <th class="sortable-column">Indicador</th>
+        <th class="sortable-column">Total (ML)</th>
+        <th class="sortable-column">Almacén</th>
+        <th class="sortable-column">Fecha de Entrega</th>
+        <th class="sortable-column">Detalles del Artículo</th>
+        <th class="sortable-column">Proyecto</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+		<td>MP01AVPE01</td>
+		<td>Pechuga de Pollo Deshuesada</td>
+		<td>130</td>
+		<td>kgs</td>
+		<td>53.90 MXP</td>
+		<td>0</td>
+		<td></td>
+		<td>7,007</td>
+		<td>WHCAS</td>
+		<td>05/07/2018</td>
+    </tr>
+    </tbody>
+</table>
+<div class="row">
+<div class="cell order-1">
+    <div class="row">
+        <div class="cell-md-12">
+            <input type="text" placeholder="Encargado de Compras">
+        </div>
+	</div>
+    <div class="row">   
+           <div class="cell-md-12">
+            <input type="text" placeholder="Propietario">
+        </div>
+	</div>
+    <div class="row">
+        <div class="cell-md-12">
+        <select data-role="select" data-append="Uso Principal">
+     		   	<option selected></option>
+     		   	<option value="1">1</option>
+  		      	<option value="2">2</option>
+ 	     	  <option value="3">3</option>
+		</select>
+        </div>
+        <div class="cell-md-12">
+        <textarea data-role="textarea" data-default-value="Comentarios"></textarea>
+        </div>
+        <div class="cell-md-12">
+        </div>
+    </div>
+</div>
+<div class="cell order-2">
+    <div class="row">
+        <div class="cell-md-12">
+            <input type="text" placeholder="Total antes de Descuento">
+        </div>
+	</div>
+    <div class="row">   
+           <div class="cell-md-2">        
+                  <input type="text" placeholder="%">
+        </div>
+           <div class="cell-md-10">
+            <input type="text" placeholder="Total con Descuento">
+        </div>
+	</div>
+    <div class="row">
+        <div class="cell-md-12">
+            <input type="text" placeholder="Impuesto">
+        </div>
+    </div>
+    <div class="row">
+        <div class="cell-md-12">
+            <input type="text" placeholder="Total Pago Vencido">
+        </div>
+    </div>
+</div>
+</div>
+	<button class="button success mt-10 mr-2">Ok</button><button class="button alert mt-10">Cancelar</button>
+<div class="dropdown-button place-right mt-10">
+    <button class="button dark dropdown-toggle">Copiar a...</button>
+    <ul class="d-menu place-right" data-role="dropdown">
+        <li><a href="#">Pedido Entrada Mercancías</a></li>
+        <li><a href="#">Factura de Proveedores</a></li>
+        <li><a href="#">Factura Res.</a></li>
+    </ul>
+</div>
+	<button class="button dark place-right mt-10 mr-2">Copiar Desde</button>
+	</div>
+
+	<div id="footer">
+	&copy; Castallia 
+	</div>
+
+    <!-- Jquery JS-->
+    <script src="js/jquery/jquery.min.js"></script>
+    <!-- js JS-->
+    <script src="js/select2/select2.min.js"></script>
+    <script src="js/datepicker/moment.min.js"></script>
+    <script src="js/simple-scrollbar.js"></script>
+<script src="js/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+	<!--JS SCRIPT METRO  -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/metro.min.js"></script>
+	<!--  Notificacions -->
+	<!-- Scroll Pretty -->
+	<script>
+		let scrollDiv = document.querySelector(".area");
+		SimpleScrollbar.initEl(scrollDiv);
+	</script>
+</body>
+</html>
