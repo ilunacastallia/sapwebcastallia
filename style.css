@@ -257,10 +257,6 @@ font-weight:bold;
     float: left;
 }
 
-.socionegociosform input[type="text"], .socionegociosform select, .pedidosformleft input[type="text"], .socionegociosformleft select, .pedidosformright input[type="text"], .pedidosformright select  {
-    margin: 3px 0;
-}
-
 .pedidosformleft { 
 	width: 49%;
 	float: left;
@@ -273,6 +269,18 @@ font-weight:bold;
 	float: left;
 	z-index: 99999;
 	margin: 0;
+}
+
+.select {
+	margin:0 !important;
+}
+
+.overlay.for-calendar-picker {
+    z-index: 999999999;
+}
+
+.calendar-picker.dialog-mode .calendar {
+	z-index:9999999999 !important;
 }
 
 /** DISABLER **/
